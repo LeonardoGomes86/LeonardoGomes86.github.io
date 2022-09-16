@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,11 +11,16 @@
             font-family: 'Press Start 2P', cursive;
             font-size: 20px; 
         }
+        @import url('https://fonts.googleapis.com/css2?family=Gruppo&display=swap');
         #descricao {
-            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-family: 'Gruppo', cursive;
         }
         body {
             background-color: #000000e5;
+            color: white;
+        }
+        .links {
+            text-decoration: none;
             color: white;
         }
         #info-pessoal {
@@ -34,6 +39,13 @@
         .item4 {
             font-size: 40px;
         }
+        ul {
+            list-style-type: "\1F3AE";
+            font-size: 25px;
+        }
+        .tamanho-link {
+            font-size: 20px;
+        }
     </style>
 </head>
 <body>
@@ -41,7 +53,7 @@
     <h1 id="nome">
         Leonardo Pereira Gomes
     </h1>
-    <img id="foto-pessoal" src="https://pbs.twimg.com/profile_images/1564301753230757888/LXIZ4UjN_400x400.jpg" alt="Foto pessoal segurando uma taça e com uma logo da Trybe" width="300px">
+    <img id="foto-pessoal" src="https://pbs.twimg.com/profile_images/1564301753230757888/LXIZ4UjN_400x400.jpg" alt="Foto pessoal segurando uma taça e com uma logo da Trybe" width="435px">
     <p id="descricao">
         Olá pessoal, me chamo Leonardo, curto muito animes, séries, jogos, tecnologia e muita cultura geek.
     </p>
@@ -74,14 +86,14 @@
         <br>
      </ul>
         <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-        <p>
-        <a href="#foto-pessoal">
+        <p class="tamanho-link">
+        <a href="#foto-pessoal" class="links">
             Veja aqui novamente minha foto pessoal.
         </a>
         </p>
-    <p>
-        <a href="https://mmorpgbr.com.br/" target="_blank">
-            Veja aqui um <strong>interessante</strong> blog sobre <em>MMORPGS</em>
+    <p class="tamanho-link">
+        <a href="https://mmorpgbr.com.br/" target="_blank" class="links">
+            Veja aqui um <strong style="text-decoration: underline;">interessante</strong> blog sobre <em>MMORPGS</em>
         </a>
     </p>
     <p>
@@ -89,16 +101,16 @@
     </p>
     <ul>
         <li>
-        <a href="#nome">Inicio</a>
+        <a href="#nome" class="links">Inicio</a>
         </li>
         <li>
-        <a href="#foto-pessoal">Foto</a>
+        <a href="#foto-pessoal" class="links">Foto</a>
         </li>
         <li>
-        <a href="#info-pessoal">Informações Pessoais</a>
+        <a href="#info-pessoal" class="links">Informações Pessoais</a>
         </li>
         <li>
-        <a href="#habilidades">Habilidades</a>
+        <a href="#habilidades" class="links">Habilidades</a>
         </li>
     </ul>
 </body>
